@@ -64,10 +64,12 @@
     padding: 8px 20px;
     border-radius: 46px;
   }
-  nav{
+  .navbar{
     justify-content: space-between;
     align-items: center;
     padding: 57px 190px 96px 190px;
+    max-width: 1060px;
+    margin: 0 auto;
   }
   .nav-header{
     font-size: 2.3rem;
@@ -80,17 +82,26 @@ font-weight: 800;
   }
 
   .banner{
-    padding: 57px 190px 96px 190px;
     justify-content: space-between;
+    max-width: 1060px;
+    margin: 0 auto;
   }
   .banner-title{
     font-size: 4.8rem;
     font-weight: 900;
   }
  
-  .banner-content{
+  .banner-des{
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 26px;
+  }
+  .banner-content{
+    flex-direction: column;
+  }
+  .banner-img{
+    width: 100%;
+    
   }
 
   /* button styles */
@@ -115,17 +126,27 @@ font-weight: 800;
 
   /* responsive layout */
   @media screen and (max-width: 576px) {
-    .navbar-header{
-      justify-content: left;
-      padding: 0px;
-      margin-left: 10px;
+    .navbar,
+    .banner
+        {flex-direction: column;
     }
-    nav{
+
+      
+    .navbar {      
         padding: 50px 20px 50px 20px;
     }
     .banner{
-      flex-direction: column;
-
+      text-align: left;
+      
+     
+    }
+    .banner-title{
+      font-size: 2.4rem;
+      /* padding: 50px 88px 28px 20px; */
+    }
+    .button{
+      padding: 14px 36px 14px 36px;
+      flex-direction: row;
     }
     .nav-links{
       visibility: hidden;
