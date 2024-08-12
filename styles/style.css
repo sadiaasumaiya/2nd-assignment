@@ -47,6 +47,7 @@
   .links-item{
     text-decoration: none;
     color: rgb(255, 255, 255);
+    display: hide;
   }
   .nav-item{
     list-style: none;
@@ -114,6 +115,47 @@ font-weight: 800;
     font-size: 1rem;
     font-weight: 600;
   }
+  .btn1{
+    padding: 17px 23px 15px 24px;
+    color: rgb(255, 255, 255);
+font-size: 2.5rem;
+font-weight: 900;
+text-align: left;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+letter-spacing: 1px;
+position: absolute;
+right: 140px;
+top: 500px;
+  }
+  .btn2{
+    padding: 17px 23px 15px 24px;
+    color: rgb(255, 255, 255);
+font-size: 1.8rem;
+font-weight: 900;
+text-align: left;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+position: absolute;
+right: 530px;
+top: 760px;
+  }
+  #btn-content1{
+    color: rgba(255, 255, 255, 0.65);
+font-size: 0.8rem;
+font-weight: 400;
+text-align: left;
+  }
+  #btn-content2{
+    color: rgba(255, 255, 255, 0.65);
+font-size: 0.8rem;
+font-weight: 400;
+text-align: left;
+  }
   #border{
     border: 1px solid white;
   }
@@ -134,9 +176,11 @@ font-weight: 800;
       
     .navbar {      
         padding: 50px 20px 50px 20px;
+        margin: 28px 0px;
     }
     .banner{
       text-align: left;
+      margin-left: ;
       
      
     }
@@ -147,6 +191,9 @@ font-weight: 800;
     .button{
       padding: 14px 36px 14px 36px;
       flex-direction: row;
+    }
+    .fa-solid fa-bars{
+      
     }
     .nav-links{
       visibility: hidden;
