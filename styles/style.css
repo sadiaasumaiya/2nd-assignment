@@ -204,6 +204,29 @@ margin-bottom: 6px;
     font-size: 0.8rem;
 font-weight: 400;
   }
+
+  /* Run section styles */
+
+  .run{
+    display: flex;
+    max-width: 1060px;
+    margin: 0 auto;
+    background-color: rgb(34, 34, 34);
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+  }
+  .run-content{
+    justify-content: center;
+    padding: 40px 160px 40px 54px;
+    
+  }
+
+  .run-img{
+    width: 40%;
+    border-radius: 14px;
+  }
   /* responsive layout */
   @media screen and (max-width: 576px) {
     .navbar,
@@ -243,5 +266,18 @@ font-weight: 400;
     /* habit section */
     .card-container{
       flex-direction: column;
+    }
+    .run{
+      flex-direction: column;
+      text-align: center;
+    }
+    .run-content{
+      padding: 31px 33px 24px 33px;
+    }
+    .button{
+      margin-bottom: 10px;
+    }
+    .run-img{
+      width: 70%;
     }
   }
