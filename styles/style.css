@@ -247,6 +247,12 @@ font-weight: 900;
     border-radius: 14px;
     margin-right: 30px;
   }
+
+  /* Meet our team Styles */
+  .img-container{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+  }
   /* responsive layout */
   @media screen and (max-width: 576px) {
     .navbar,
