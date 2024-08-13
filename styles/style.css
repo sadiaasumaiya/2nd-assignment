@@ -116,7 +116,7 @@ font-weight: 800;
     margin: 0px 14px;
     border-radius: 42px;
     border-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   .btn1{
@@ -194,6 +194,7 @@ font-weight: 400;
   }
   .habit-img{
     border-radius: 50%;
+    
   }
   .img-title{
     font-size: 1.2rem;
@@ -223,9 +224,28 @@ font-weight: 400;
     
   }
 
+
+  /* BMI Calculator Styles */
+  .bmi-title{
+    font-size: 3rem;
+font-weight: 900;
+margin-bottom: 14px;
+  }
+  .bmi-chart-title{
+    font-size: 1.6rem;
+font-weight: 900;
+  }
+
+
+
+  .bmi-des{
+    font-size: 0.8rem;
+  font-weight: 400;
+}
   .run-img{
     width: 40%;
     border-radius: 14px;
+    margin-right: 30px;
   }
   /* responsive layout */
   @media screen and (max-width: 576px) {
