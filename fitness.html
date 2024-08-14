@@ -74,7 +74,7 @@
             <div class="run-content">
                 <h3 class="primary-color habit-title">Run an Extra <br>Mile Easily</h3>
                 <p class="primary-color-light banner-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-                <button class="button btn-background-color primary-color">Join Now</button>
+                <button class="run-button btn-background-color primary-color">Join Now</button>
             </div>
             <img class="run-img" src="images/run.jpg" alt="">
         </section>
@@ -123,14 +123,25 @@
                         <h4 class="primary-color bmi-chart-title gap">Calculate your BMI</h4>
                         <p class="primary-color-light bmi-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
                         
-                        <form class="input-container">
-                            <label for="Height"><input type="number" id="Height" placeholder="Height/cm"></label>
-                            <label for="Weight"><input type="number" id="Weight" placeholder="Weight/kg"></label>
-                            <label for="Age"><input type="number" id="age" placeholder="Age"></label>
-                            <label for="sex"><input type="select" id="gender" placeholder="Sex"></label>
-                            <label class="activity" for="Activity"><input type="select" name="activity" id="factor" placeholder="Select an activity factor"></label>
-                        </form>
-                        <button class="button btn-background-color primary-color">Calculate</button>
+                        <div class="input-form">
+                            <input class="height" type="text" placeholder="Height/cm" />
+                            <input class="kg" type="text" placeholder="Weight/kg" />
+                            <input class="age" type="text" placeholder="Age" />
+
+                            <select class="sex-in">
+                                <option value="" disabled selected>Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+
+                            <select class="activity-in">
+                                <option value="" disabled selected>Select an Activity Factor</option>
+                                <option value="very-active">Very Active(Hard Exercise)</option>
+                                <option value="moderate-active">Moderately Active(Moderate Exercise)</option>
+                                <option value="light-active">Light Active(Light Exercise)</option>
+                            </select>
+                            <input class="submit btn-background-color primary-color" type="submit" value="Calculate" />
+                        </div>
                     </div>
                 </div>
                 
@@ -141,16 +152,34 @@
 
         <section class="meet">
             <div class="meet-header">
-                <h3 class="primary-color bmi-chart-title">Meet Our Team</h3>
+                <h3 class="primary-color meet-title gap">Meet Our Team</h3>
                 <p class="primary-color-light bmi-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             </div>
             <div class="img-container">
-                <img src="images/trainer1.png" alt="">
-                <img src="images/trainer2.png" alt="">
-                <img src="images/trainer3.png" alt="">
-                <img src="images/trainer4.png" alt="">
-                <img src="images/trainer5.png" alt="">
-                <img src="images/trainer6.png" alt="">
+                <div class="trainer1">
+                    <h5 class="primary-color trainer-title-up">Jerome Bell</h5>
+                    <p class="primary-color-light trainer-title-des">Trainer</p>
+                </div>
+                <div class="trainer2">
+                    <h5 class="primary-color trainer-title-up">Cameron Willi</h5>
+                    <p class="primary-color-light trainer-title-des">Trainer</p>
+                </div>
+                <div class="trainer3">
+                    <h5 class="primary-color trainer-title-up">Darrell Steward</h5>
+                    <p class="primary-color-light trainer-title-des">Trainer</p>
+                </div>
+                <div class="trainer4">
+                    <h5 class="primary-color trainer-title-bottom">Dianne Russell</h5>
+                    <p class="primary-color-light trainer-title-des2">Trainer</p>
+                </div>
+                <div class="trainer5">
+                    <h5 class="primary-color trainer-title-bottom">Cody Fisher</h5>
+                    <p class="primary-color-light trainer-title-des2">Trainer</p>
+                </div>
+                <div class="trainer6">
+                    <h5 class="primary-color trainer-title-bottom">Theresa Webb</h5>
+                    <p class="primary-color-light trainer-title-des2">Trainer</p>
+                </div>
             </div>
         </section>
     </main>
