@@ -437,11 +437,33 @@ font-weight: 900;
     margin: 15px 0px;
     border-radius: 10px;
   }
+  /* Footer Section Styles */
+
+  .fit-footer{
+    justify-content: space-between;
+  }
+  .footer-container{
+    
+  }
+  footer{
+    padding: 66px 190px 80px 190px;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .get-started{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
   /* responsive layout */
   @media screen and (max-width: 576px) {
     .navbar,
     .banner
         {flex-direction: column;
+    }
+    *{
+      margin: 0 auto;
     }
     .nav-header{
       margin: 0px;
