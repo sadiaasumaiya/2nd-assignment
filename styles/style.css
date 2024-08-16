@@ -132,6 +132,7 @@ font-weight: 800;
     padding: 17px 23px 15px 24px;
     color: rgb(255, 255, 255);
 font-size: 2.5rem;
+line-height: 20px;
 font-weight: 900;
 text-align: left;
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -140,13 +141,15 @@ backdrop-filter: blur(20px);
 background: rgba(255, 255, 255, 0.1);
 letter-spacing: 1px;
 position: absolute;
-right: 140px;
-bottom: 50px;
+right: 80px;
+bottom: 20px;
+z-index: 1;
   }
   .btn2{
-    padding: 17px 23px 15px 24px;
+    padding: 17px 23px 17px 24px;
     color: rgb(255, 255, 255);
 font-size: 1.8rem;
+line-height: 20px;
 font-weight: 900;
 text-align: left;
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -154,8 +157,9 @@ border-radius: 12px;
 backdrop-filter: blur(20px);
 background: rgba(48, 48, 48, 0.54);
 position: absolute;
-right: 530px;
-bottom: 70px;
+right: 430px;
+bottom: -290px;
+z-index: 1;
   }
   #btn-content1{
     color: rgba(255, 255, 255, 0.65);
@@ -167,10 +171,20 @@ text-align: left;
     color: rgba(255, 255, 255, 0.65);
 font-size: 0.8rem;
 font-weight: 400;
-text-align: left;
+text-align: right;
   }
   #border{
     border: 1px solid white;
+  }
+  .circle{
+    background-color: rgb(230, 83, 60);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 530px;
+bottom: -250px;
+z-index: 1;
   }
   
   /* section styles */
@@ -471,6 +485,7 @@ font-weight: 900;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 1rem;
+    padding-top: 20px;
     
   }
   /* responsive layout */
@@ -512,6 +527,19 @@ font-weight: 900;
       display: flex;
       flex-direction: row;
     }
+    .btn1{
+      padding: 13px 15px;
+      font-size: 1.3rem;
+      bottom: 80px;
+      right: 10px;
+    }
+    .btn2{
+      padding: 13px 15px;
+      font-size: 1.3rem;
+      right: 400px;
+      bottom: -250px;
+    }
+
     
     /* habit section */
     .card-container{
@@ -527,9 +555,9 @@ font-weight: 900;
       padding: 31px 33px 24px 33px;
       text-align: left;
     }
-    .button{
+    /* .button{
       margin-bottom: 10px;
-    }
+    } */
     .run-img{
       width: 80%;
     }
