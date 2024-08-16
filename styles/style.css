@@ -56,6 +56,11 @@
     list-style: none;
     margin-right: 40px;
   }
+  .humburger{
+    list-style: none;
+    color: rgb(255, 255, 255);
+    display: none;
+  }
   .nav-links{
     font-size: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -117,7 +122,6 @@ font-weight: 800;
   /* button styles */
   .button{
     padding: 16px 40px 16px 40px;
-    justify-content: center;
     margin: 0px 14px;
     border-radius: 42px;
     border-style: none;
@@ -265,7 +269,7 @@ font-weight: 400;
     justify-content: space-between; 
   }
   .bmi-calc{
-    padding: 50px 100px;
+    padding: 50px 120px;
   }
   .bmi-header{
     margin-bottom: 88px;
@@ -277,7 +281,7 @@ font-weight: 900;
 margin-bottom: 14px;
   }
   .bmi-chart-title{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 font-weight: 900;
   }
 
@@ -449,7 +453,7 @@ font-weight: 900;
     width: 50%;
     justify-content: space-evenly;
   }
-  footer{
+  .footer-sec{
     padding: 66px 190px 80px 190px;
     background: rgba(255, 255, 255, 0.1);
     max-width: 1440px;
@@ -461,49 +465,54 @@ font-weight: 900;
     margin-bottom: 0px;
     line-height: 1px;
   }
+  .copyright{
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    
+  }
   /* responsive layout */
   @media screen and (max-width: 576px) {
-    .navbar,
-    .banner
-        {flex-direction: column;
-    }
     
     .nav-header{
       margin: 0px;
-      padding: 10px 5px;
+      padding: 0px;
+      justify-content: left;
     }
       
     .navbar {      
-      flex-direction: column;
-      justify-content: flex-start;
-        padding: 20px 10px 20px 10px;
-        margin: 28px 0px;
+      display: flex;
+      justify-content: space-around;
+        padding: 50px 20px 30px 20px;
         text-align: left;
+        align-items: center;
+
     }
-    .nav-links{
-      justify-content: space-between;
-    }
-    .banner{
-      text-align: left;
-      margin-left: ;
-      
-     
-    }
-    .banner-title{
-      font-size: 2.4rem;
-      /* padding: 50px 88px 28px 20px; */
-    }
-    .button{
-      padding: 14px 36px 14px 36px;
-      flex-direction: row;
+    .nav-item{
+      visibility: hidden;
     }
     .humburger{
       display: block;
+      margin-right: 50px;
     }
-    .nav-links{
-      visibility: hidden;
+    
+    .banner{
+      flex-direction: column;
+      text-align: left;
+      padding: 0px 20px;
+      }
+    .banner-title{
+      font-size: 2.4rem;
+  
     }
-
+    .button{
+      /* padding: 20px; */
+      display: flex;
+      flex-direction: row;
+    }
+    
     /* habit section */
     .card-container{
       flex-direction: column;
@@ -560,13 +569,13 @@ font-weight: 900;
     }
 
     /* Footer Section */
-    .footer{
+    .footer-sec{
       flex-direction: column;
-      /* width: 100%; */
       text-align: left;
       margin: 0px;
       padding: 0px;
       justify-content: center;
+      margin-top: 60px;
       
     }
     .footer-container{
@@ -587,6 +596,9 @@ font-weight: 900;
     }
     .get-started{
       font-size: 1.2rem;
+    }
+    .copyright{
+      text-align: left;
     }
     
   }
